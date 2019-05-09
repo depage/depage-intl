@@ -1,0 +1,33 @@
+{
+    "name": "depage/intl",
+    "description": "depage-intl helper class to work with locales etc..",
+    "version": "2.0",
+    "type": "library",
+    "keywords": [
+        "locale",
+        "intl"
+    ],
+    "require": {
+        "php": " >= 7.0"
+    },
+    "autoload": {
+        "psr-4": { "Depage\\Intl\\": "" }
+    },
+    "support": {
+        "email": "info@depage.net",
+        "source": "https://github.com/depage/depage-intl",
+        "issues": "https://github.com/depage/depage-intl/issues"
+    },
+    "time": "2019-05-09",
+    "license": [
+        "MIT",
+        "GPL-2.0"
+    ],
+    "authors": [
+        {
+            "name": "Frank Hellenkamp",
+            "homepage": "http://depage.net",
+            "role": "Developer"
+        }
+    ]
+}
