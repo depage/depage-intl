@@ -9,7 +9,7 @@
  * @author    Frank Hellenkamp [jonas@depage.net]
  */
 
-namespace Depage\Intl;
+namespace Depage\Intl {
 
 /**
  * @brief Intl
@@ -80,6 +80,8 @@ class Intl
         return $language;
     }
     // }}}
+}
+
 }
 
 // vim:set ft=php sw=4 sts=4 fdm=marker et :
