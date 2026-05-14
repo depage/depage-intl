@@ -36,10 +36,16 @@ class Intl
         }
 
         $locale = setlocale(LC_ALL, $locale);
-        putenv('LANG=' . $locale);
-        putenv('LC_ALL=' . $locale);
-        putenv('LC_MESSAGES=' . $locale);
-        putenv('LANGUAGE=' . $locale);
+        if (is_callable("putenv")) {
+            putenv('LANG=' . $locale);
+            putenv('LC_ALL=' . $locale);
+            putenv('LC_MESSAGES=' . $locale);
+            putenv('LANGUAGE=' . $locale);
+        }
+        $_ENV['LANG'] = $locale;
+        $_ENV['LC_ALL'] = $locale;
+        $_ENV['LC_MESSAGES'] = $locale;
+        $_ENV['LANGUAGE'] = $locale;
     }
     // }}}
     // {{{ getLocale()
